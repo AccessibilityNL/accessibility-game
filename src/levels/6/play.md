@@ -55,11 +55,11 @@ furniture:
           - label: 'L: 45cm'
 
 #correct:
-correct_options: {Kleur: 'Lucht', Maat: 'M: 35cm'}
+correct_options: {Kleur: 'Kiezel', Maat: 'M: 35cm'}
 
 #popup
 popup_title: 'Boodschappenlijstje:'
-popup_text: Een kleine, lichtblauwe stoel.
+popup_text: Een kleine, lichtgrijze stoel.
 popup_button_text: Begin
 
 # score popup tekst en knoppen

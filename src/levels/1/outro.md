@@ -5,7 +5,7 @@ title: Dyslexie
 image: /assets/images/levels/dyslexie_uitro.svg
 ---
 
-Wanneer je ontwerpt voor mensen met dyslexie is het belangrijk om de tekst zo simpel mogelijk te houden en een duidelijke structuur te hanteren. Dit maakt de tekst daarnaast prettiger leesbaar voor iedereen.
+Wanneer je ontwerpt voor mensen met dyslexie is het belangrijk om de tekst zo simpel mogelijk te houden en een duidelijke structuur te hanteren. Zo wordt tekst uiteindelijk voor iedereen beter leesbaar.
 
 ## Tips
 

@@ -19,6 +19,6 @@ level_score_retry: Probeer opnieuw
 level_score_next: Ga verder
 ---
 
-Je hebt vast gemerkt dat veel kleuren op elkaar leken. Kleurenblinden lopen hier vaak tegenaan omdat zij het verschil tussen kleuren niet goed kunnen zien. Dit valt op te lossen door kleuren te gebruiken die een groter contrast met elkaar hebben maar ook door het toevoegen van een icoon of een ander visueel kenmerk waardoor je op twee manieren kan zien wat bij elkaar hoort.
+Je hebt vast gemerkt dat veel kleuren op elkaar leken. Mensen die kleurenblind zijn lopen hier vaak tegenaan omdat zij het verschil tussen kleuren niet goed kunnen zien. Dit los je op door kleuren te gebruiken met een groot kleurcontrast maar je kunt ook een icoon of een ander visueel kenmerk toevoegen zodat er op meerder wijze zichtbaar is wat bij elkaar hoort.
 
 Je gaat nu hetzelfde spel spelen met een set iconen op de plaatjes.

@@ -7,6 +7,6 @@ image: /assets/images/levels/doof.svg
 icon: /assets/images/levels/icon_no_sound_blue.svg
 ---
 
-Mensen die slechthorend of doof zijn kunnen video of audio niet begrijpen als er geen ondertiteling of tekst aanwezig is. In dit level ga je ervaren hoe het is om een video te kijken die moeilijk te begrijpen is.
+Mensen die slechthorend of doof zijn kunnen video of audio niet volgen als deze niet is ondertitelt of is voorzien van audioscript. In dit level ga je ervaren hoe het is om een video te zien die lastig te volgen is.
 
-> Je gaat een video kijken waar de verteller moeilijk te verstaan is. Er is automatisch gegenereerde ondertiteling maar die is niet heel betrouwbaar...
+> Je gaat naar een video kijken waarbij de geïnterviewde moeilijk te verstaan is. De automatisch gegenereerde ondertitel blijkt niet heel betrouwbaar...

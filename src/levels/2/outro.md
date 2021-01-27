@@ -5,8 +5,8 @@ title: Kleurenblind
 image: /assets/images/levels/kleurenblind_uitro.svg
 ---
 
-Zoals je misschien gemerkt hebt, is het veel makkelijker om duidelijkheid te krijgen wanneer je op meer manieren het verschil kan zien. Wanneer je kleur wilt gebruiken om te verduidelijken, zorg dan dat je ook een alternatief hebt, zoals bijvoorbeeld een icoontje.
+Zoals je misschien gemerkt hebt, is het makkelijk als er op meerdere manieren (in dit geval kleur en beeld) duidelijk wordt gemaakt wat bij elkaar hoort. Als je kleur gebruikt om iets te verduidelijken, doe dit dan ook op een ander wijze bv met een icoontje.
 
 [Lees meer over kleurgebruik](https://www.accessibility.nl/blog/zorg-voor-voldoende-kleurcontrast)
 
-* Het is belangrijk om te zorgen dat je genoeg contrast aanbrengt in je app of website, zodat alle gebruikers de tekst kunnen lezen en zonder probleem kunnen navigeren
+* Een goed contrast tussen de voor- en achtergrond in een app of op je website is belangrijk, zodat alle gebruikers de tekst kunnen lezen en zonder probleem kunnen navigeren

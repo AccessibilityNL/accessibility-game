@@ -5,7 +5,7 @@ title: ADHD
 image: /assets/images/levels/adhd_uitro.svg
 ---
 
-Mensen met ADHD zijn makkelijk afgeleid. Drukke website designs en overvolle navigatiemogelijkheden zijn daarom heel vervelend.
+Mensen met ADHD zijn makkelijk afgeleid. Een druk webdesign en veel keuze mogelijkheden of veel menu opties kunnen daarom heel vervelend zijn.
 
 Deze verbeteringen zijn niet alleen prettig voor mensen met ADHD; gewone gebruikers profiteren hier ook van.
 
