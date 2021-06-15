@@ -3,6 +3,7 @@
 > Build by Bas de Bruin
 > for Stichting Accessibility
 
+> Maintained by Veron Wormeester
 
 ## Getting started with development:
 I recommend downloading Visual Studio Code and running and editing the code from there
