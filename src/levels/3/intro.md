@@ -11,4 +11,5 @@ Mensen die blind of slechtziend zijn, moeten met een toetsenbord door een websit
 
 > Je gaat door een pagina navigeren met alleen je toetsenbord.
 > Gebuik de Tab toets om door elementen te navigeren.
+
 > Voor dit level heb je geluid nodig, zorg er dus voor dat je geluid aan staat
