@@ -5,9 +5,7 @@ title: Bedankt voor het spelen!
 
 ## Feedback
 
-We willen je vragen om een korte vragenlijst in te vullen zodat we de game nog beter kunnen maken:
-
-<a href="https://forms.gle/YC11TNgGhKoPNw868" class="button" target="_blank">Feedback formulier</a>
+We vinden het leuk je feedback te horen? Stuur gerust een e-mail naar vwormeester@accessibility.nl.
 
 
 <hr>
