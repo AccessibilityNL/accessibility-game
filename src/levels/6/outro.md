@@ -1,11 +1,11 @@
 ---
 layout: layouts/level-outro.pug
 index: 6
-title: Kokervisie
+title: Kokervisus
 image: /assets/images/levels/kokervisie_uitro.svg
 ---
 
-Wanneer je ontwerpt voor mensen met kokervisie is het belangrijk om te zorgen dat elementen niet te ver uit elkaar staan. Zorg er ook voor dat elementen niet tijdelijk op het scherm staan, het duurt voor iemand met kokervisie langer om een pagina te "scannen".
+Wanneer je ontwerpt voor mensen met kokervisus is het belangrijk om te zorgen dat elementen niet te ver uit elkaar staan. Zorg er ook voor dat elementen niet tijdelijk op het scherm staan, het duurt voor iemand met kokervisus langer om een pagina te "scannen".
 
 
 * Zorg dat bijbehorende elementen dicht bij elkaar staan

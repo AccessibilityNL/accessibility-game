@@ -5,7 +5,7 @@ index: 1
 title: Dyslexie
 
 question:
-  title: Beantwoordt nu de vragen over dyslexie
+  title: Beantwoord nu de vragen over dyslexie
   button_text: Ga naar de vragen
   button_back_text: Terug naar de tekst
   button_send_text: Verzenden

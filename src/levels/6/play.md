@@ -2,7 +2,7 @@
 
 layout: levels/level-kokervisie.pug
 index: 6
-title: Kokervisie
+title: Kokervisus
 
 # tekst
 
