@@ -14,7 +14,7 @@ questions:
   - Q: Wanneer is de term dyslexie bedacht?
     A: 1887
   - Q: Waar heeft dyslexie voornamelijk invloed op?
-    A: leesvaardigheid, spelling en woordenschat
+    A: leesvaardigheid, spelling, woordenschat
   - Q: 'Vul in: Dyslexie heeft een __ oorzaak.'
     A: neurologische
 
