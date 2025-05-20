@@ -107,13 +107,20 @@ var dyslexie = {
         });
     },
 
+    amountIncorrect: 0,
+
     // check correctness of questions
     checkQuestions() {
         let correct = true;
         // for each input field
         $('#questions input[type=field]').each((_, q) => {
 
-            if (this.filterText(q.value) !== this.filterText(reverse($(q).attr('data-correct')))) {  // incorrect
+            const checkA = this.filterText(q.value);
+            const checkB = this.filterText(reverse($(q).attr('data-correct')));
+            
+            console.log(checkA, checkB);
+
+            if (checkA !== checkB) {  // incorrect
 
                 correct = false;
                 $(q).addClass('incorrect');
@@ -136,10 +143,10 @@ var dyslexie = {
         });
 
         // if all questions are correct: calc score and end level
-        if (correct) {
+        if (correct || this.amountIncorrect > 2) {
             this.calcScore();
         } else {
-
+            this.amountIncorrect++;
             //play incorrect buzzer sound
             globalSounds.incorrect.play();
         }
@@ -148,6 +155,7 @@ var dyslexie = {
     // filter out characters and capitalisation
     filterText(str) {
         str = str.toLowerCase();
+        str = str.replace(" en ", "");
         // filter out non letters
         if ( str!=="" ) str = str.match(/\w/g).join('');
         return str;
