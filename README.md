@@ -3,7 +3,7 @@
 > Build by Bas de Bruin
 > for Stichting Accessibility
 
-> Maintained by Veron Wormeester
+> Maintained by Veron Wormeester and Bas de Bruin
 
 ## Getting started with development:
 I recommend downloading Visual Studio Code and running and editing the code from there
@@ -13,7 +13,7 @@ When first opening the project run the `first-time` script in the lower left cor
 
 
 NPM version `14` was used during development, problems may arrise when using newer versions.
-My recommendation is to use the `lvm` package to manage your NPM versions.
+My recommendation is to use the `nvm` package to manage your NPM versions.
 
 ## Making changes
 To view your changes live in the browser run the `start` script.
