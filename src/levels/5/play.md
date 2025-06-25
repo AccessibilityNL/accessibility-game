@@ -4,6 +4,8 @@ layout: levels/level-slechthorend.pug
 index: 5
 title: Slechthorend
 
+video_source: doof-video.mp4
+
 # score popup tekst en knoppen
 level_score_win: Level behaald!
 level_score_fail: Level gefaald...

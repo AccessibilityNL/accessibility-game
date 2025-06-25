@@ -1,0 +1,82 @@
+---
+lang: en
+layout: levels/level-blind.pug
+index: 3
+title: Blind
+back_button_text: Go back
+
+overlay_image: blind-overlay-en.svg
+
+# gesproken tekst
+page1_intro_text: Welcome to the Blind level, use the tab keys to start
+page1_submit_text: Incorrect. Because the images are not labeled, it is impossible to answer this question. We continue to the next page. 
+
+page2_submit_text: You filled in this form correctly
+page2_submit_incorrect_text: Fill in all input fields. 
+page2_clear_text: All input fields have been cleared 
+
+# score popup tekst en knoppen
+level_score_win: Level passed!
+level_score_fail: Level failed...
+level_score_bad: Too bad, please try again.
+level_score_good: Well done, but you can do better!
+level_score_perfect: Perfect! Very good.
+
+level_score_retry: Try again
+level_score_next: Continue
+
+---
+
+// Pagina 1: geen alt tekst
+
+#page1.active
+    h1 Heading: Captcha
+    
+    p Prove you are not a robot to proceed. 
+    p How many traffic lights do you see in the image below? 
+
+    p Image
+    p Image
+    p Image
+    p Image
+
+    input(type="field" title="Input field: How many" id="page1--discription")
+
+    p(data-confirm="blind.page2.init()") Button: Send
+
+// Pagina 2: slechte labels
+
+#page2
+    h1 Heading: Contact form
+
+    p Fill in your contact details to continue
+
+    p How may we call you?
+    p Name
+    input(type="field" title="Input field")
+
+    p How can we reach you digitally?
+    p E-Mail
+    input(type="field" title="Input field")
+
+    p Do you want to receive advertisement e-mails and news letters?
+    
+    p(data-confirm="blind.page2.setRadio(true)") Radio button
+    p(data-confirm="blind.page2.setRadio(false)") Radio button
+
+    p Yes please!
+    p No
+
+    p(data-confirm="blind.page2.confirm()") Button
+    p(data-confirm="blind.page2.clearForm()") Button
+
+// Pagina 3: einde
+
+#page3
+    h1 Thanks for playing the blind level 
+    p Choose one of the following options: 
+
+    p(data-confirm="blind.page3.setRadio(true)") Radio button: Try this level again
+    p(data-confirm="blind.page3.setRadio(false)") Radio button: Finish this level
+
+    p(data-confirm="blind.page3.confirm()") Button: Send

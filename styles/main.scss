@@ -135,6 +135,13 @@ p a:not(.button) {
     }
 }
 
+.language-button {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    z-index: 999;
+}
+
 
 
 // HOME PAGE

@@ -19,6 +19,6 @@ html(lang=lang?lang:'nl')
                     .spacer
 
                     if collections.levels[index]
-                        a(href=`/levels/${index+1}/intro/`).button Volgend level
+                        a(href=`/${lang?lang+"/":""}/levels/${index+1}/intro/`).button= next_level
                     else
-                        a(href=`/einde/`).button Ga verder
+                        a(href=`${lang}/einde/`).button= end_levels

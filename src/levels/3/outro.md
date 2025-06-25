@@ -3,6 +3,8 @@ layout: layouts/level-outro.pug
 index: 3
 title: Blind
 image: /assets/images/levels/blind_uitro.svg
+next_level: Volgend level
+end_levels: Ga verder
 ---
 
 Zoals je gemerkt heb is niet makkelijk om door een pagina te navigeren zonder hem te kunnen zien. 

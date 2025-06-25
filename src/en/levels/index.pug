@@ -1,0 +1,20 @@
+---
+lang: en
+layout: layouts/page.pug
+title: Level select
+---
+
+.container.center
+    .logo-title
+        h1 Level select
+    
+    each level in collections.levels_en
+        a(href=level.url title=level.data.title).level-list
+            .level-icon
+                img(src=level.data.icon alt=`Icon of the ${level.data.title} level.`)
+            h3= level.data.index + '. '
+            h4= level.data.title
+
+    .spacer
+
+    a(href="/" rel="prev" title="Go back to home").button.back Go back

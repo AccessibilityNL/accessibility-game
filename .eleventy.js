@@ -20,6 +20,13 @@ module.exports = function (eleventyConfig) {
             (a, b) => a.data.index - b.data.index
         );
     });
+    // sort levels by index number
+    // creates 'levels-en' collection
+    eleventyConfig.addCollection('levels_en', function(collectionApi) {
+        return collectionApi.getFilteredByTag('level-en').sort(
+            (a, b) => a.data.index - b.data.index
+        );
+    });
 
     return {
         dir: {

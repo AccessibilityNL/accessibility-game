@@ -5,7 +5,7 @@ title: Bedankt voor het spelen!
 
 ## Feedback
 
-We vinden het leuk je feedback te horen? Stuur gerust een e-mail naar vwormeester@accessibility.nl.
+We vinden het leuk je feedback te horen. Stuur gerust een e-mail naar vwormeester@accessibility.nl.
 
 
 <hr>
