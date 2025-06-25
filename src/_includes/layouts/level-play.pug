@@ -6,8 +6,8 @@ html(lang=lang?lang:'nl')
         main#swup
             //- play header (hidden for screenreaders because it would be disctracting)
             header(aria-hidden="true")
-                a(href=`/levels/${index}/intro/` rel="prev" tabindex="-1").button.light.back Ga terug
-                a(href="/" tabindex="-1")#logo
+                a(href=`/${lang?lang+"/":""}levels/${index}/intro/` rel="prev" tabindex="-1").button.light.back= back_button_text || "Ga terug"
+                a(href=`/${lang||""}` tabindex="-1")#logo
                     img(src='/assets/images/acc_logo.svg' alt='Logo van Stichting Accessibility')
                     h2 Accessibility Game
 

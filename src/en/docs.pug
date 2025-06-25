@@ -1,0 +1,121 @@
+---
+layout: /layouts/page
+title: Hoe werkt het systeem
+---
+
+//- Script for toggling drop downs
+script.
+    toggleDropDown = elem => { elem.classList.toggle('open') };
+
+//- Styles for drop down
+style.
+    .drop-down {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+        background: rgba(10,10,255,.05);
+        border-radius: 1rem;
+
+        text-align: left;
+    }
+    .drop-down h4 {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        color: rgb(10,10,255);
+    }
+    .drop-down h4::before {
+        content: '\27A4'; // >
+        color: rgb(10,10,255);
+        margin-right: 0.8rem;
+        transition: .2s;
+    }
+    .drop-down.open h4::before {
+        transform: rotate(90deg);
+    }
+    .drop-down .content {
+        display: none;
+    }
+    .drop-down.open .content {
+        display: block;
+    }
+
+//- Resuable drop down component
+mixin drop-down(text = 'drop-down-label')
+    button(title='open dropdown '+text onclick="toggleDropDown(this)").drop-down
+        h4= text
+        .content
+            block
+
+.container.large
+    h1 Documentatie: Hoe het systeem werkt
+    h2 Accessibility Game 2.0
+    h3 Laatste update: 8 Jan. 2021
+    p.
+        Gemaakt door Bas de Bruin in opdracht van Stichting Accessibility
+
+    hr
+
+    h2 De stack
+    p.
+        Het gekozen systeem draait op Eleventy, een static site generator. Met als templating language Pug en Markdown bestanden voor inhoud tekst.
+
+    h2 Beginnen met programmeren
+    p.
+        Als je wijzigingen wil maken aan de code of inhoud moet je de website kunnen bouwen/compileren.
+        Zorg dat je een terminal met NPM hebt of een IDE die scripts van NPM kan uitvoeren (hiervoor raadt ik Visual Studio Code aan, hiermee kan je met 1 klik de website bouwen).
+    h3 Eerste keer:
+    p.
+        De eerste keer dat je de code opent moet je de benodigde depenencies installeren:
+        Als je Visual Studio Code gebruikt kan je rechtsonder op #[code first-time] klikken; Of run #[code npm install] vanuit een terminal.
+    h3 De website bouwen:
+    p Om de website te bouwen klik je op het #[code start] script in VS Code of run je #[code npm start] in de terminal.
+    p Alle wijziginen die je maakt terwijl dit script runt worden automatisch geupdated!
+    p Ga in je browser naar #[code http://localhost:8080] om de website te bekijken.
+
+    hr
+
+    h2 De inhoud wijzigen
+    p.
+        Als je alleen de inhoud wilt wijzigen kan dat makkelijkelijk door naar de #[code src/level] map te gaan en dan het nummer te openen van het level. Hierin zijn 3 bestanden die de tekst inhoud van de levels bevat:
+    p Het #[code intro.md] bestand met de inhoud van de pagina die voor het level komt. Dit is ook waar je de titel, illustratie en het icoon van het level kan verranderen;
+    p Het #[code play.md] bestand met alle tekst die zichtbaar is tijdens het spelen van het level;
+    p Het #[code outro.md] bestand met de inhoud van de pagina die je ziet als je het level hebt gehaald.
+
+    p Na het bewerken van de tekst moet je de website bouwen zoals hierboven staat beschreven.
+
+    hr
+
+
+.container.large
+    h2 Code en levels
+    p.
+        Om de code herbruikbaar te maken en te laten werken met meerdere talen heeft elk level de volgende bestanden: 
+
+        
+    +drop-down('level-naam.pug bestand met layout en stijlen')
+        p.
+            In de #[code src/_includes/levels] map staan de layout #[code .pug] bestanden voor elk level, deze worden gebruikt door de #[code play.md] bestanden van elk level. Deze layouts zijn te gebruiken in elke taal (als er later meer talen moeten worden toegevoegd).
+        p.
+            Stijlen staan meestal bovenaan in een style. tag maar kunnen ook in #[code assets/styles] staan, omdat de layout bestanden anders te vol worden.
+
+
+    +drop-down('een level-naam.js bestand met de javascript logica voor het level') 
+        p.
+            In de #[code assets/js/] map staan alle javascript bestanden voor de levels. Hierin is de logica van elk level geprogrammeerd.
+        p.
+            Elk script heeft een level-naam variabele waar alle functies van dat level in staan, dit is zo gedaan zodat na elk level alle functies kunnen worden verwijderd met de unload() functie die eronder staat.
+
+
+    +drop-down('3 markdown bestanden')
+        p.
+            In elke #[code src/levels/nummer/] map staan 3 markdown(.md) bestanden: 
+        p.
+            intro.md en outro.md met de inhoud van de intro en uitro pagina's voor en na het level.
+    
+
+
+
+
+.spacer(style="height: 5rem")

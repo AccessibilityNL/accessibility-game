@@ -3,6 +3,8 @@ layout: layouts/level-outro.pug
 index: 4
 title: ADHD
 image: /assets/images/levels/adhd_uitro.svg
+next_level: Volgend level
+end_levels: Ga verder
 ---
 
 Mensen met ADHD zijn makkelijk afgeleid. Een druk webdesign en veel keuzemogelijkheden of menuopties kunnen daarom vervelend zijn.
