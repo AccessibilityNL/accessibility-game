@@ -2,7 +2,7 @@ doctype html
 html(lang=lang?lang:'nl')
     include _includes/layouts/head.pug
     include _includes/mixins/level-mixins.pug
-    body
+    body(data-level-skip=index)
         main#swup.container.large.padding
             .columns
                 .level-image.animate-left
