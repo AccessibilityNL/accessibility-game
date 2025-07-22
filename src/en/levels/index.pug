@@ -17,4 +17,8 @@ title: Level select
 
     .spacer
 
-    a(href="/" rel="prev" title="Go back to home").button.back Go back
+    a(href="/" rel="prev" title="Go back home").button.back Back
+    button(data-click-text="Copy link" onclick="customizeLink()" style="margin-left: 1rem").button Make custom link
+    div(data-text="Copied: ")#copy-text
+
+script(data-src="/assets/js/level-select.js" type="text/javascript" data-load-script)
