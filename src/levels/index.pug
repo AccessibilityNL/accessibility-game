@@ -17,3 +17,8 @@ title: Level select
     .spacer
 
     a(href="/" rel="prev" title="Ga terug naar home").button.back Ga terug
+    button(data-click-text="Kopiëer link" onclick="customizeLink()" style="margin-left: 1rem").button Maak aangepaste link
+    div(data-text="Gekopieerd: ")#copy-text
+
+
+script(data-src="/assets/js/level-select.js" type="text/javascript" data-load-script)
