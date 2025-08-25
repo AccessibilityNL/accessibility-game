@@ -1,0 +1,46 @@
+---
+layout: layouts/level-play.pug
+---
+
+// Style
+style.
+    #blind-background {
+        position: fixed;
+        top: 4.5rem; left: 0;
+
+        background: #101228;
+        color: white;
+
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #blind-background #content > * {
+        display: none;
+    }
+
+    #blind-background #content > *.active {
+        display: block;
+    }
+
+    #blind-background #overlay {
+        position: fixed;
+        top: 4.5rem; left: 0;
+        width: 100vw;
+        height: calc(100vh - 4.5rem);
+
+        display: flex;
+        align-content: center; justify-content: center;
+    }
+    #blind-background #overlay img {
+        width: auto; height: auto;
+        object-fit: contain;
+    }
+
+
+#content
+    | !{content}
+
+
+// Script
+script(data-src="/assets/js/level-blind-2.js" type="text/javascript" data-load-script)
