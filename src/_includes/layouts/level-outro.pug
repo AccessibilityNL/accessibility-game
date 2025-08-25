@@ -21,4 +21,4 @@ html(lang=lang?lang:'nl')
                     if collections.levels[index]
                         a(href=`${lang?"/"+lang:""}/levels/${index+1}/intro/`).button= next_level
                     else
-                        a(href=`${lang}/einde/`).button= end_levels
+                        a(href=`${lang?"/"+lang:""}/einde/`).button= end_levels
