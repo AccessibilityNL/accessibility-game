@@ -4,7 +4,7 @@ let swup;
 let globalSounds = {};
 $(document).ready(()=>{
     swup = new Swup({
-        plugins: [new SwupScrollPlugin(), new SwupA11YPlugin()]
+        plugins: [new SwupScrollPlugin(), new SwupA11YPlugin()],
     });
 
     // unload assets if in global scope
@@ -14,19 +14,54 @@ $(document).ready(()=>{
 
     // look for script with data-load-script and exec
     swup.on('contentReplaced', loadScripts);
-
+    swup.on('contentReplaced', setUrlParams);
+    swup.on('contentReplaced', hideHiddenLevelContent);
+    
     // init sounds
     loadGlobalSounds();
 });
 
-
+// page load scripts:
+// loadScripts
 $(document).on('DOMContentLoaded', loadScripts);
 function loadScripts() {
     if ($('body *[data-load-script]'))
         $.getScript($('body *[data-load-script]').attr('data-src'));
-
+    
     try { swup.scrollTo(document.body, 0); } catch {}
 }
+// move urlSearchParameteres into sessionStorage 
+// for controlling which levels are available
+$(document).on('DOMContentLoaded', setUrlParams);
+function setUrlParams() {
+    const params = new URLSearchParams(window.location.search);
+    if (!params.has('levels')) return;
+
+    sessionStorage.setItem('levels', params.get('levels'));
+}
+// hide specific level content
+$(document).on('DOMContentLoaded', hideHiddenLevelContent);
+function hideHiddenLevelContent() {
+    if (!sessionStorage.getItem('levels')) return;
+
+    // hide level specific content
+    document.querySelectorAll("*[data-level]").forEach(elem => {
+        if (!sessionStorage.getItem('levels').match(elem.getAttribute('data-level'))) {
+            elem.style.display = 'none';
+            elem.setAttribute('aria-hidden', 'true');
+        }
+    });
+
+    // skip to next level if level not selected 
+    // checke at each intro page
+    const attr = document.body.getAttribute('data-level-skip');
+    if (!attr || !sessionStorage.getItem('levels')) return;
+    console.log(attr);
+    if (sessionStorage.getItem('levels').match(attr)) return;
+    location.pathname = location.pathname.replace(attr, parseInt(attr)+1);
+}
+
+
 
 // function for loading global win and fail sounds
 function loadGlobalSounds() {
@@ -41,6 +76,12 @@ function loadGlobalSounds() {
             src: '/assets/sounds/incorrect.mp3'
         })
     }
+}
+
+// make sure url parameters carry over to the next page
+function urlParamHandler(url) {
+    console.log(url);
+    return url;
 }
 
 // Utility functions used by all levels

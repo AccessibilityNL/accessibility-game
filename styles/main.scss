@@ -185,6 +185,8 @@ p a:not(.button) {
     }
 }
 
+// LEVEL SELECT
+
 
 // LEVEL INTRO AND OUTRO
 
@@ -596,6 +598,19 @@ header {
     &:active {
         transform: scale(0.98);
     }
+
+    input {
+        margin-left: auto;
+        margin-right: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+#copy-text {
+    
+    margin-top: 1rem;
+    color: $accent;
 }
 
 

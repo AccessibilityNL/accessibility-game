@@ -9,7 +9,7 @@ title: Level select
         h1 Level select
     
     each level in collections.levels_en
-        a(href=level.url title=level.data.title).level-list
+        a(href=level.url title=level.data.title data-level=level.data.index).level-list
             .level-icon
                 img(src=level.data.icon alt=`Icon of the ${level.data.title} level.`)
             h3= level.data.index + '. '
@@ -17,4 +17,8 @@ title: Level select
 
     .spacer
 
-    a(href="/" rel="prev" title="Go back to home").button.back Go back
+    a(href="/" rel="prev" title="Go back home").button.back Back
+    button(data-click-text="Copy link" onclick="customizeLink()" style="margin-left: 1rem").button Make custom link
+    div(data-text="Copied: ")#copy-text
+
+script(data-src="/assets/js/level-select.js" type="text/javascript" data-load-script)
