@@ -1,6 +1,6 @@
-# Accessibility Game
+# Accessibility Game - found on www.accessibilitygame.nl
 
-> Build by Bas de Bruin
+> Built by Bas de Bruin
 > for Stichting Accessibility
 
 > Maintained by Veron Wormeester and Bas de Bruin
